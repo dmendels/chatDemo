@@ -7,6 +7,7 @@
 //
 
 #import "DMAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation DMAppDelegate
 
@@ -15,6 +16,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [Parse setApplicationId:@"QIH9NZnfICel96LMKDVwkkoHxYyHjv3ZJBxCe9kS" 
+                  clientKey:@"AEGfslh18prPvZysXmjn61hagygBSfcYTJdSISw7"];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (![defaults stringForKey:@"chatName"]) {
+        // first time it's run, create a userDefault
+        [defaults setObject:@"Chat Name" forKey:@"chatName"];
+        [defaults synchronize];
+    }
     return YES;
 }
 							
