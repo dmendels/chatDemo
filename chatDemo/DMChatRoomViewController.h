@@ -34,4 +34,5 @@
 - (void)loadLocalChat;
 
 - (NSString *)stringFromStatus:(NetworkStatus )status;
+-(void)presentChatNameDialog;
 @end
