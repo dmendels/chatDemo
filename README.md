@@ -1,4 +1,4 @@
-#iOS Chat room demo with Parse.com server side#
+# iOS Chat room demo with Parse.com server side #
 
 This project was set up as a complete source for the tutorial entitled: "iOS Tutorial: Creating a chat room using Parse.com" that can be found on my [personal blog](http://attila.tumblr.com). Here's a view of what is created:
 
